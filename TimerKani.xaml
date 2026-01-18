@@ -1,0 +1,45 @@
+﻿<Window x:Class="alarm_vs_preview61825at113pm.TimerKani"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:alarm_vs_preview61825at113pm"
+        mc:Ignorable="d"
+        Title="TimerKani"
+        Height="150" 
+        Width="300"        
+        WindowStyle="None"        
+        AllowsTransparency="True"
+        ResizeMode="NoResize"
+        Background="Transparent"
+        WindowStartupLocation="CenterScreen"
+        >
+    <WindowChrome.WindowChrome>
+        <WindowChrome CaptionHeight="0" ResizeBorderThickness="10" />
+    </WindowChrome.WindowChrome>
+
+    <Border BorderBrush="#414850" BorderThickness="12,35,12,12">
+        <Grid Background="LightBlue">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="233*"/>
+                <ColumnDefinition Width="43*"/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="TimerNoticeXButton" FontSize="18" Content="X" Foreground="Red" Background="#414850" Height="27" Click="TimerNoticeXButton_Click" Margin="226,-31,2,107" Grid.ColumnSpan="2"/>
+            <Button x:Name="TimerNoticeOkButton" Padding="-1,-3,0,0" FontSize="18" Content="OK" Click="TimerNoticeOkButton_Click" Margin="0,77,3,3" Grid.Column="1" />
+            <Image Source="/Images/Bell0.png" Height="30" Margin="115,2,71,71"  />
+            <TextBlock
+            x:Name="Mb1_0Tb" 
+            FontWeight="DemiBold"
+            Background="Transparent"
+            Margin="30,36,30,28" 
+            TextWrapping="Wrap" 
+            FontSize="12" 
+            TextAlignment="Center" Grid.ColumnSpan="2"                
+            >
+                Time's up!
+                <LineBreak/>             
+                The countdown timer is now complete.
+            </TextBlock>
+        </Grid>
+    </Border>
+</Window>
