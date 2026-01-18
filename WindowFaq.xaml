@@ -1,0 +1,131 @@
+﻿<Window x:Class="alarm_vs_preview61825at113pm.WindowFaq"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:alarm_vs_preview61825at113pm"
+        mc:Ignorable="d"
+        Title="WindowFaq"
+        Height="570" 
+        Width="355"
+        WindowStyle="None"        
+        AllowsTransparency="True"
+        ResizeMode="NoResize"
+        WindowStartupLocation="Manual"
+        Background="Transparent"
+        >
+    <WindowChrome.WindowChrome>
+        <WindowChrome CaptionHeight="0" ResizeBorderThickness="10" />
+    </WindowChrome.WindowChrome>
+
+    <Grid Background="#414850">
+        <Button x:Name="WindowFaqCloseButton" Content="X" Padding="0,-3,0,0" Foreground="#e3434a" FontSize="21" Width="38" Height="25" HorizontalAlignment="Left" Margin="314,2,0,0" VerticalAlignment="Top" Click="WindowFaqCloseButton_Click" />
+
+        <RichTextBox 
+            IsReadOnly="True"
+            FontSize="16" 
+            Margin="25,32,22,15"
+            ScrollViewer.VerticalScrollBarVisibility="Visible"
+            >
+            <RichTextBox.Resources>
+                <Style TargetType="Paragraph">
+                    <Setter Property="Margin" Value="0,20,0,0"/>
+                </Style>
+            </RichTextBox.Resources>
+
+            <FlowDocument>
+                <Paragraph>
+                    <LineBreak/>
+                    <Bold>Frequently Asked Questions (FAQ)</Bold>
+                    <LineBreak/>
+                    <LineBreak/>
+                    <Bold>What is BreakNow Alarm Clock app?</Bold>
+                    <LineBreak/>
+                    BreakNow Alarm Clock is a must-have app that allows you to set a timer or an alarm clock, reminding you of specific tasks and encouraging you to take a break away from your desktop or laptop screen via a message box.
+                    <LineBreak/>
+                    <LineBreak/>
+                    <Bold>What is the privacy policy of BreakNow Alarm Clock?</Bold>
+                    <LineBreak/>
+                    BreakNow Alarm Clock respects your privacy. It does not access, collect, or transmit personal information (data that could be used to identify a person).
+                    <LineBreak/>
+                    <LineBreak/>
+                    <Bold>What is the difference between an alarm clock and a timer?</Bold>
+                    <LineBreak/>
+                    The alarm clock allows you to set the alarm date, time, and message. The timer, meanwhile, allows you to only set the time and shows you a countdown from the set time to the remaining one second.
+                    <LineBreak/>
+                    <LineBreak/>
+                    <Bold>How to set the timer?</Bold>
+                    <LineBreak/>
+                    To set the timer, go to the "Set Timer" area. "00:00:00" corresponds to hours, minutes and seconds. From here, type in the desired time.
+                    <LineBreak/>
+                    <LineBreak/>
+                    For example, if I were to set the timer to alarm 10 seconds from now, I would type in the details to make the timer look like this "00:00:10" and click on the "Start Timer" button.
+                    <LineBreak/>
+                    <LineBreak/>
+                    Hours can only be set to a maximum of 24, minutes to a maximum of 60, and seconds to a maximum of 60.
+                    <LineBreak/>
+                    <LineBreak/>
+                    You can reset the timer by clicking on the "Reset Timer" button.
+                    <LineBreak/>
+                    <LineBreak/>
+                    <Bold>How will I be notified when the countdown timer is completed?</Bold>
+                    <LineBreak/>
+                    When the countdown timer is completed, you will be notified via a message box that automatically appears in the middle of your desktop or laptop computer screen.
+                    <LineBreak/>
+                    <LineBreak/>
+                    <Bold>How to set the alarm clock?</Bold>
+                    <LineBreak/>
+                    Two things are required to set the alarm clock:
+                    <LineBreak/>
+                    <LineBreak/>
+                    1. Set the alarm date by clicking the calendar icon.
+                    <LineBreak/>
+                    <LineBreak/>
+                    For the date, you only have a 7-day option, starting from the date today.
+                    <LineBreak/>
+                    <LineBreak/>
+                    2. Set the alarm time. 
+                    Inside the "Set Time" input box, write the alarm time.
+                    The only accepted input format is Hours:Minutes AM or PM, 
+                    for example, 9:30 AM or 9:30 PM
+                    <LineBreak/>
+                    <LineBreak/>
+                    The alarm text message is optional. 
+                    So, the alarm clock can be set without an alarm text message.
+                    If you choose to set the alarm text message, 
+                    the message is limited to 25 characters. This includes white spaces.
+                    <LineBreak/>
+                    <LineBreak/>
+                    <Bold>How to save the alarm date, time, and/or message?</Bold>
+                    <LineBreak/>
+                    To save the alarm date, time, and/or message, click the "Save Alarm" button.
+                    Once you click the Save Alarm button, the alarm date, time, and/or message
+                    will be shown on the "Alarm List" box, and a corresponding "Remove" button will be shown.
+                    You have the option to delete the saved alarm by ticking the checkbox next to the saved alarm and clicking the "Remove" button.
+                    <LineBreak/>
+                    <LineBreak/>
+                    You can save another alarm date, time, and/or message by going through the 
+                    above-mentioned process. Saved alarms are put on a list. The nearest upcoming alarm is listed first.
+                    <LineBreak/>
+                    <LineBreak/>
+                    <Bold>How will I be notified when the alarm date/time arrives?</Bold>
+                    <LineBreak/>
+                    When the set alarm date and time arrive, you will be notified via a message box.
+                    <LineBreak/>
+                    <LineBreak/>
+                    <Bold>What do I do if I encounter issues not discussed here?</Bold>
+                    <LineBreak/>
+                    If you encounter issues not discussed here, exit the app and restart it.
+                    <LineBreak/>
+                    <LineBreak/>
+                    If the problem persists, contact the developers at support@ellenrapps.com
+                    <LineBreak/>
+                    <LineBreak/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Button x:Name="WindowFaqMinimizeButton" Width="38" Height="25" HorizontalAlignment="Left" Margin="273,2,0,0" VerticalAlignment="Top" Click="WindowFaqMinimizeButton_Click" >
+            <Image Source="/Images/Minimize.png"/>
+        </Button>
+    </Grid>
+</Window>
